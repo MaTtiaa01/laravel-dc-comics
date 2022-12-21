@@ -23,9 +23,10 @@
                 <a class="nav-link text-uppercase " href="#">games</a>
                 <a class="nav-link text-uppercase " href="#">collectibles</a>
                 <a class="nav-link text-uppercase " href="#">videos</a>
-                <a class="nav-link text-uppercase  " href="#">fans</a>
                 <a class="nav-link text-uppercase  " href="#">news</a>
                 <a class="nav-link text-uppercase  " href="#">shop</a>
+                <a class="nav-link text-uppercase  " href="{{route('comics.create')}}">admin</a>
+
 
             </nav>
             <div class="input_bar">
