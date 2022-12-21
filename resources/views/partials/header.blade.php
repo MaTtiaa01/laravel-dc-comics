@@ -16,16 +16,16 @@
                 <img src=" {{ Vite::asset('resources/img/dc-logo.png')}} " alt="">
             </div>
             <nav class="nav justify-content-center aling-items-center">
-                <a class="nav-link text-uppercase  " href="#">charachter</a>
-                <a class="nav-link text-uppercase " href="#">comics</a>
-                <a class="nav-link text-uppercase  " href="#">movies</a>
-                <a class="nav-link text-uppercase " href="#">tv</a>
-                <a class="nav-link text-uppercase " href="#">games</a>
-                <a class="nav-link text-uppercase " href="#">collectibles</a>
-                <a class="nav-link text-uppercase " href="#">videos</a>
-                <a class="nav-link text-uppercase  " href="#">news</a>
-                <a class="nav-link text-uppercase  " href="#">shop</a>
-                <a class="nav-link text-uppercase  " href="{{route('comics.create')}}">admin</a>
+                <a class="nav-link text-uppercase" href="{{route('home')}}">home</a>
+                <a class="nav-link text-uppercase" href="#">comics</a>
+                <a class="nav-link text-uppercase" href="#">movies</a>
+                <a class="nav-link text-uppercase" href="#">tv</a>
+                <a class="nav-link text-uppercase" href="#">games</a>
+                <a class="nav-link text-uppercase" href="#">collectibles</a>
+                <a class="nav-link text-uppercase" href="#">videos</a>
+                <a class="nav-link text-uppercase" href="#">news</a>
+                <a class="nav-link text-uppercase" href="#">shop</a>
+                <a class="nav-link text-uppercase" href="{{route('comics.create')}}">admin</a>
 
 
             </nav>
