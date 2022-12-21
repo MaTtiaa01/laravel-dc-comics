@@ -12,7 +12,7 @@
                     <h6>{{$comic->title}}</h6>
                     <div class="price">{{$comic->price}}</div>
                     <div class="thumb">
-                        <img src="{{$comic->thumb}}" alt="">
+                        <img width="80" src="{{$comic->thumb}}" alt="">
                     </div>
                 </div>
             </div>

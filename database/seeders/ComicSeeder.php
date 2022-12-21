@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\Comic;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Comic;
 
 class ComicSeeder extends Seeder
 {
