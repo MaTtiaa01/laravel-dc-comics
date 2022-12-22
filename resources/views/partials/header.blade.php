@@ -25,7 +25,9 @@
                 <a class="nav-link text-uppercase" href="#">videos</a>
                 <a class="nav-link text-uppercase" href="#">news</a>
                 <a class="nav-link text-uppercase" href="#">shop</a>
-                <a class="nav-link text-uppercase" href="{{route('comics.create')}}">admin</a>
+                <a class="nav-link text-uppercase" href="{{route('comics.index')}}">admin</a>
+                <a class="nav-link text-uppercase btn btn-secondary" href="{{route('comics.create')}}">add</a>
+
 
 
             </nav>
