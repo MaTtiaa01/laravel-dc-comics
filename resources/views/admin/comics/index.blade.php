@@ -32,7 +32,7 @@
                         <td>{{$comic->sale_date}}</td>
                         <td>{{$comic->type}}</td>
                         <td>
-                            <a class="btn btn-primary" href="#">view</a>
+                            <a class="btn btn-primary" href="{{route('comics.show',$comic->id)}}">view</a>
                             <a class="btn btn-primary" href="{{route('comics.edit',$comic->id)}}">edit</a>
                             <a class="btn btn-danger" href="{{route('comics.destroy',$comic->id)}}">delete</a>
 
