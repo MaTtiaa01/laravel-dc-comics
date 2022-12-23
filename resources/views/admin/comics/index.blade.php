@@ -5,7 +5,7 @@
 <section class="user_comics py-5">
     <div class="container">
         <h2>Comics List</h2>
-
+        @include('partials.message')
         <div class="table-responsive">
             <table class="table table-primary">
                 <thead>
