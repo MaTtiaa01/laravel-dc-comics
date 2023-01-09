@@ -91,7 +91,7 @@ return [
         'array' => 'The :attribute must not have more than :max items.',
         'file' => 'The :attribute must not be greater than :max kilobytes.',
         'numeric' => 'The :attribute must not be greater than :max.',
-        'string' => 'The :attribute must not be greater than :max characters.',
+        'string' => 'Il :attribute non deve superare i :max caratteri.',
     ],
     'max_digits' => 'The :attribute must not have more than :max digits.',
     'mimes' => 'The :attribute must be a file of type: :values.',
@@ -100,7 +100,7 @@ return [
         'array' => 'The :attribute must have at least :min items.',
         'file' => 'The :attribute must be at least :min kilobytes.',
         'numeric' => 'The :attribute must be at least :min.',
-        'string' => 'The :attribute must be at least :min characters.',
+        'string' => 'Il :attribute deve essere di almeno :min caratteri.',
     ],
     'min_digits' => 'The :attribute must have at least :min digits.',
     'multiple_of' => 'The :attribute must be a multiple of :value.',
@@ -120,7 +120,7 @@ return [
     'prohibited_unless' => 'The :attribute field is prohibited unless :other is in :values.',
     'prohibits' => 'The :attribute field prohibits :other from being present.',
     'regex' => 'The :attribute format is invalid.',
-    'required' => 'The :attribute field is required.',
+    'required' => 'Il :attribute è un campo obbligatorio.',
     'required_array_keys' => 'The :attribute field must contain entries for: :values.',
     'required_if' => 'The :attribute field is required when :other is :value.',
     'required_if_accepted' => 'The :attribute field is required when :other is accepted.',
@@ -160,6 +160,9 @@ return [
     'custom' => [
         'attribute-name' => [
             'rule-name' => 'custom-message',
+            // 'min' => [
+            //     'string' => 'Il titolo deve essere di alemno 10 caratteri'
+            // ]
         ],
     ],
 

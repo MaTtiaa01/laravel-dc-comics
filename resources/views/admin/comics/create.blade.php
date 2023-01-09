@@ -3,6 +3,7 @@
 @section('content')
 
 <div class="container py-5">
+    <h1>Create new comic</h1>
 
     @if ($errors->any())
     <div class="alert alert-danger">
