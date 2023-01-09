@@ -3,6 +3,17 @@
 @section('content')
 
 <div class="container py-5">
+
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+            <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+    @endif
+
     <form action="{{route('comics.store')}}" method="post" class="card p-3">
         @csrf
 
