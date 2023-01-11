@@ -40,31 +40,13 @@ class ComicController extends Controller
 
         //validate data
 
-        $val_data = $request->validate([
-            'title' => 'required|unique:comics|max:255|min:10',
-            'description' => 'nullable|max:255|min:15',
-            'thumb' => 'nullable|max:255',
-            'price' => 'required|decimal:2|max:255',
-            'series' => 'nullable|max:255',
-            'sale_date' => 'nullable|max:255',
-            'type' => 'nullable|max:255',
-        ]);
+        $val_data = $request->validated();
 
-        // save all data
-
-        // $comic = new Comic();
-        // $comic->title = $request['title'];
-        // $comic->description = $request['description'];
-        // $comic->thumb = $request['thumb'];
-        // $comic->price = $request['price'];
-        // $comic->series = $request['series'];
-        // $comic->sale_date = $request['sale_date'];
-        // $comic->type = $request['type'];
-        // $comic->save();
-
+        //create new comic
         Comic::create($val_data);
 
-        return to_route('comics.index');
+        //return to toute
+        return to_route('comics.index')->with('message', 'Comic added successfully');
     }
 
     /**
@@ -109,6 +91,19 @@ class ComicController extends Controller
         ];
 
         $comic->update($data);
+
+        // $val_data = $request->validate([
+        //     'title' => 'required|unique:comics|max:255|min:10',
+        //     'description' => 'nullable|max:255|min:15',
+        //     'thumb' => 'nullable|max:255',
+        //     'price' => 'required|decimal:2|max:255',
+        //     'series' => 'nullable|max:255',
+        //     'sale_date' => 'nullable|max:255',
+        //     'type' => 'nullable|max:255',
+        // ]);
+
+        // $comic->update($val_data);
+
         return to_route('comics.index')->with('message', "$comic->name edit successfully");
     }
 

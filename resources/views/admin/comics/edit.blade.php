@@ -3,6 +3,8 @@
 @section('content')
 
 <div class="container py-5">
+
+
     <form action="{{route('comics.update',$comic->id)}}" method="post" class="card p-3">
         @csrf
 
